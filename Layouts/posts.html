@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page.title }}</title>
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:site_name" content="My Publishing Tool">
+</head>
+<body>
+    <article>
+        <h1>{{ page.title }}</h1>
+        <p>Published by Kathleen Cat</p>
+        <hr>
+        <div class="content">
+            {{ content }}
+        </div>
+    </article>
+</body>
+</html>
