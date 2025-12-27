@@ -4,58 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <meta property="og:type" content="article">
     <meta property="og:title" content="World Aids Day">
-    <meta property="og:description" content="A special post hosted on GitHub for Telegram Instant View.">
-    <meta property="og:site_name" content="NUCS Diary">
     <meta property="og:image" content="https://raw.githubusercontent.com/Soda-Lynn/imgs/refs/heads/main/IMG_20251217_224809_618_transfer_2025-12-17_224914.jpg">
-
-    <title>World Aids Day</title>
+    <title>World Aids Day | NUCS Diary</title>
     
     <style>
-        body { font-family: sans-serif; line-height: 1.6; max-width: 600px; margin: 40px auto; padding: 0 20px; color: #333; }
-        img { max-width: 100%; height: auto; border-radius: 8px; }
-        figure { margin: 20px 0; text-align: center; }
-        figcaption { font-size: 0.9em; color: #666; margin-top: 8px; font-style: italic; }
-        h1 { color: #111; }
-        .author { color: #888; font-size: 0.9em; }
+        :root { --primary-color: #1a1a1a; --text-color: #333; --link-color: #007bff; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.7; max-width: 700px; margin: 0 auto; padding: 0 20px; color: var(--text-color); background-color: #fff; }
+        
+        /* NAVIGATION BAR */
+        nav { background: var(--primary-color); padding: 15px; margin: 0 -20px 40px -20px; display: flex; justify-content: center; gap: 20px; position: sticky; top: 0; z-index: 1000; }
+        nav a { color: white; text-decoration: none; font-size: 14px; font-weight: bold; transition: 0.3s; }
+        nav a:hover { color: #ddd; text-decoration: underline; }
+
+        /* CONTENT STYLING */
+        article { text-align: justify; } /* Justifies text globally */
+        h1 { color: #000; font-size: 2.2rem; line-height: 1.2; margin-bottom: 10px; text-align: left; }
+        .author-meta { color: #666; font-size: 0.9em; margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 10px; text-align: left; }
+        
+        img, video { max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0; display: block; }
+        figure { margin: 25px 0; }
+        figcaption { font-size: 0.85em; color: #777; text-align: center; font-style: italic; margin-top: 8px; }
+        
+        blockquote { border-left: 4px solid var(--primary-color); background: #f9f9f9; margin: 20px 0; padding: 15px 25px; font-style: italic; }
+        .highlight { background-color: #fff3cd; padding: 2px 5px; border-radius: 3px; }
+
+        /* FOOTER / ADMIN SECTION */
+        footer { margin-top: 60px; padding: 40px 0; border-top: 2px solid #eee; font-size: 0.9em; color: #555; }
+        .admin-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; background: #f4f4f4; padding: 15px; border-radius: 8px; margin-top: 10px; }
     </style>
 </head>
 <body>
 
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#admin">Admin Team</a>
+        <a href="mailto:your-email@example.com">Contact</a>
+        <a href="about.html">About</a>
+    </nav>
+
     <article>
         <header>
             <h1>World Aids Day</h1>
-            <p class="author">By Soda &bull; December 27, 2025</p>
+            <div class="author-meta">
+                By <strong>Soda</strong> | December 27, 2025 | <span class="highlight">Health Report</span>
+            </div>
         </header>
 
-        <hr>
+        <figure>
+            <img src="https://raw.githubusercontent.com/Soda-Lynn/imgs/refs/heads/main/IMG_20251217_224809_618_transfer_2025-12-17_224914.jpg" alt="Featured Image">
+            <figcaption>Graphic by technical department. <a href="#">Download HD</a></figcaption>
+        </figure>
 
-        <div class="content">
-            <p>This is my first paragraph. Building a custom publishing tool on GitHub is a great way to share stories directly on Telegram.</p>
+        <p>This is where your English content goes. The text is justified automatically for a clean look.</p>
 
-            <figure>
-                <img src="https://raw.githubusercontent.com/Soda-Lynn/imgs/refs/heads/main/IMG_20251217_224809_618_transfer_2025-12-17_224914.jpg" alt="Diary Image">
-                <figcaption>Graphic by technical department.</figcaption>
-            </figure>
+        <blockquote>
+            "မြန်မာစာ Quote စမ်းသပ်မှု - လူသားချင်းစာနာထောက်ထားမှုဖြင့် အတူတကွရင်ဆိုင်ကြပါစို့။"
+        </blockquote>
 
-            <p>You can add as many paragraphs as you like here. Telegram will automatically format them for a clean reading experience.</p>
-            <p>ဒါကတော့ မြန်မာစာစမ်းသပ်မှုဖြစ်ပါတယ်</p>
-            
-            
-            <blockquote>
-                "The best way to predict the future is to create it."
-            </blockquote>
-            <blockquote>
-                "မြန်မာစာ quote စမ်းသပ်မှု"
-            </blockquote>
+        <p>ဒါကတော့ မြန်မာစာစမ်းသပ်မှုဖြစ်ပါတယ်၊ စာကြောင်းများကို justify ထားပေးထားသောကြောင့် ဖတ်ရသည်မှာ သေသပ်နေမည်ဖြစ်ပါသည်။</p>
 
-            <p><strong>အဆင်ပြေပြီဟုယူဆ</strong></p>
-
-            <p>I hope this full code helps you get started with your diary!</p>
-        </div>
     </article>
+
+    <footer id="admin">
+        <h3>Administration Team</h3>
+        <div class="admin-grid">
+            <div><strong>President:</strong> Khant Lynn Htet</div>
+            <div><strong>Vice President:</strong> Name Here</div>
+            <div><strong>Secretary:</strong> Name Here</div>
+            <div><strong>Technical:</strong> Soda Team</div>
+        </div>
+        <p style="text-align: center; margin-top: 30px;">
+            &copy; 2025 NUCS Diary. All Rights Reserved. <br>
+            <a href="https://github.com/Soda-Lynn">Creator Profile</a>
+        </p>
+    </footer>
 
 </body>
 </html>
-
