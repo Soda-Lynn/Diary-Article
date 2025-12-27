@@ -4,67 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <meta property="og:title" content="World Aids Day">
+    <meta property="og:title" content="NUCS Diary - Home">
     <meta property="og:image" content="https://raw.githubusercontent.com/Soda-Lynn/imgs/refs/heads/main/IMG_20251217_224809_618_transfer_2025-12-17_224914.jpg">
-    <title>World Aids Day | NUCS Diary</title>
+    <title>Home | NUCS Diary</title>
     
     <style>
-        :root { --primary-color: #1a1a1a; --text-color: #333; --link-color: #007bff; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.7; max-width: 700px; margin: 0 auto; padding: 0 20px; color: var(--text-color); background-color: #fff; }
+        :root { --primary-color: #1a1a1a; --text-color: #333; --accent: #d9534f; }
+        body { font-family: 'Segoe UI', sans-serif; line-height: 1.7; max-width: 800px; margin: 0 auto; padding: 0 20px; color: var(--text-color); }
         
-        /* NAVIGATION BAR */
-        nav { background: var(--primary-color); padding: 15px; margin: 0 -20px 40px -20px; display: flex; justify-content: center; gap: 20px; position: sticky; top: 0; z-index: 1000; }
-        nav a { color: white; text-decoration: none; font-size: 14px; font-weight: bold; transition: 0.3s; }
-        nav a:hover { color: #ddd; text-decoration: underline; }
+        /* NAVIGATION */
+        nav { background: var(--primary-color); padding: 15px; margin: 0 -20px 30px -20px; display: flex; justify-content: center; gap: 20px; position: sticky; top: 0; z-index: 1000; }
+        nav a { color: white; text-decoration: none; font-size: 14px; font-weight: bold; }
 
-        /* CONTENT STYLING */
-        article { text-align: justify; } /* Justifies text globally */
-        h1 { color: #000; font-size: 2.2rem; line-height: 1.2; margin-bottom: 10px; text-align: left; }
-        .author-meta { color: #666; font-size: 0.9em; margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 10px; text-align: left; }
-        
-        img, video { max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0; display: block; }
-        figure { margin: 25px 0; }
-        figcaption { font-size: 0.85em; color: #777; text-align: center; font-style: italic; margin-top: 8px; }
-        
-        blockquote { border-left: 4px solid var(--primary-color); background: #f9f9f9; margin: 20px 0; padding: 15px 25px; font-style: italic; }
-        .highlight { background-color: #fff3cd; padding: 2px 5px; border-radius: 3px; }
+        /* HERO SECTION */
+        .hero { text-align: center; padding: 40px 0; border-bottom: 2px solid #eee; margin-bottom: 40px; }
+        .hero h1 { font-size: 3rem; margin: 0; color: #000; }
+        .hero p { font-style: italic; color: #666; }
 
-        /* FOOTER / ADMIN SECTION */
-        footer { margin-top: 60px; padding: 40px 0; border-top: 2px solid #eee; font-size: 0.9em; color: #555; }
-        .admin-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; background: #f4f4f4; padding: 15px; border-radius: 8px; margin-top: 10px; }
+        /* POST LISTING */
+        .post-list { list-style: none; padding: 0; }
+        .post-item { margin-bottom: 25px; padding: 15px; border-radius: 8px; transition: 0.3s; border-left: 5px solid transparent; }
+        .post-item:hover { background: #f9f9f9; border-left: 5px solid var(--accent); }
+        .post-item a { text-decoration: none; color: var(--primary-color); font-size: 1.4rem; font-weight: bold; }
+        .post-date { font-size: 0.8em; color: #888; display: block; }
+
+        /* ADMIN / FOOTER */
+        footer { margin-top: 60px; padding: 40px 0; border-top: 2px solid #eee; }
+        .admin-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; background: #f4f4f4; padding: 20px; border-radius: 8px; margin-top: 20px; }
     </style>
 </head>
 <body>
 
     <nav>
         <a href="index.html">Home</a>
-        <a href="#admin">Admin Team</a>
-        <a href="mailto:your-email@example.com">Contact</a>
+        <a href="#posts">Articles</a>
+        <a href="#admin">Team</a>
         <a href="about.html">About</a>
     </nav>
 
-    <article>
-        <header>
-            <h1>World Aids Day</h1>
-            <div class="author-meta">
-                By <strong>Soda</strong> | December 27, 2025 | <span class="highlight">Health Report</span>
-            </div>
-        </header>
+    <div class="hero">
+        <h1>NUCS Diary</h1>
+        <p>A collection of reports, diaries, and technical graphics.</p>
+    </div>
 
-        <figure>
-            <img src="https://raw.githubusercontent.com/Soda-Lynn/imgs/refs/heads/main/IMG_20251217_224809_618_transfer_2025-12-17_224914.jpg" alt="Featured Image">
-            <figcaption>Graphic by technical department. <a href="#">Download HD</a></figcaption>
-        </figure>
-
-        <p>This is where your English content goes. The text is justified automatically for a clean look.</p>
-
-        <blockquote>
-            "မြန်မာစာ Quote စမ်းသပ်မှု - လူသားချင်းစာနာထောက်ထားမှုဖြင့် အတူတကွရင်ဆိုင်ကြပါစို့။"
-        </blockquote>
-
-        <p>ဒါကတော့ မြန်မာစာစမ်းသပ်မှုဖြစ်ပါတယ်၊ စာကြောင်းများကို justify ထားပေးထားသောကြောင့် ဖတ်ရသည်မှာ သေသပ်နေမည်ဖြစ်ပါသည်။</p>
-
-    </article>
+    <main id="posts">
+        <h2>Recent Publications</h2>
+        <ul class="post-list">
+            
+            <li class="post-item">
+                <span class="post-date">December 27, 2025</span>
+                <a href="world-aids-day.html">World Aids Day Report</a>
+                <p>ဒါကတော့ ပထမဆုံးတင်ထားတဲ့ အစီရင်ခံစာ ဖြစ်ပါတယ်။</p>
+            </li>
+            </ul>
+    </main>
 
     <footer id="admin">
         <h3>Administration Team</h3>
@@ -74,9 +67,8 @@
             <div><strong>Secretary:</strong> Name Here</div>
             <div><strong>Technical:</strong> Soda Team</div>
         </div>
-        <p style="text-align: center; margin-top: 30px;">
-            &copy; 2025 NUCS Diary. All Rights Reserved. <br>
-            <a href="https://github.com/Soda-Lynn">Creator Profile</a>
+        <p style="text-align: center; margin-top: 40px; font-size: 0.8em;">
+            &copy; 2025 NUCS Diary. Created by Khant Lynn Htet.
         </p>
     </footer>
 
